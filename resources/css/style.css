@@ -65,6 +65,10 @@ img {
   color: hsl(0, 0%, 80%);
 }
 
+.title {
+  padding: 2rem 0;
+}
+
 /* universal article container styling */
 
 .articles {
@@ -162,6 +166,14 @@ header a {
 
 /* Thesis Section */
 
+#thesis {
+  align-items: center;
+}
+
 #thesis .container {
   display: flex;
+}
+
+#thesis .main-article h3 {
+  padding: 2rem 0 1.5rem 0;
 }
