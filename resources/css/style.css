@@ -38,13 +38,6 @@ img {
   flex-direction: column;
 }
 
-/*.left {
-    width: 60%;
-    margin: 2rem 1.5rem;
-    flex-shrink: 0;
-}
-*/
-
 .left-margins{
   margin: 2rem 1.5rem;
 }
@@ -67,6 +60,7 @@ img {
 
 .title {
   padding: 2rem 0;
+  text-align: center;
 }
 
 /* universal article container styling */
@@ -164,11 +158,45 @@ header a {
   padding-bottom: 2rem;
 }
 
-/* Thesis Section */
-
-#thesis {
-  align-items: center;
+#about .articles .article:last-child {
+  background-color: hsl(0, 0%, 80%);
+  margin-bottom: 2rem;
 }
+
+/* Courses Sections */
+
+#courses {
+  background-color: hsl(0, 0%, 80%);
+}
+
+#courses .container {
+  display: flex;
+  padding: 0 4.5rem 2rem 4.5rem;
+}
+
+#courses .course {
+  width: 33%;
+  background-color: white;
+}
+
+#courses .course span {
+  margin: 0.5rem 1rem;
+}
+
+#courses .course h3 {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+#courses .course p {
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+#courses .container .course:nth-child(2n){
+  margin: 0 2rem;
+}
+
+/* Thesis Section */
 
 #thesis .container {
   display: flex;
