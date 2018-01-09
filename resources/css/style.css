@@ -1,13 +1,67 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/tI4j516nok_GrVf4dhunkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v12/IIm-lPOtfVKQy0GMiczF_1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Raleway Black'), local('Raleway-Black'), url(https://fonts.gstatic.com/s/raleway/v12/PKCRbVvRfd5n7BTjtGiFZPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 /* Universal Styles */
 
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   color: hsl(0, 0%, 20%);
-}
-
-div {
-  border: 1px solid red;
 }
 
 a {
@@ -15,18 +69,23 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  font-style: italic;
 }
 
 img {
@@ -39,7 +98,7 @@ img {
 }
 
 .left-margins{
-  margin: 2rem 1.5rem;
+  margin: 2.5rem 2rem;
 }
 
 .left {
@@ -48,14 +107,6 @@ img {
 
 .right {
   width: 40%
-}
-
-.dark {
-  color: hsl(0, 0%, 20%);
-}
-
-.light {
-  color: hsl(0, 0%, 80%);
 }
 
 .title {
@@ -96,17 +147,29 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
   background-color: hsl( 0, 0%, 100%);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  height: 2rem;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-left: 1.5rem;
+  font-family: "lato", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.5rem 1.5rem;
+}
+
+.logo-left {
+  color: hsl(0, 0%, 20%);
+  font-weight: 900;
+}
+
+.logo-right {
+  color: hsl(0, 0%, 80%);
+}
+
+.logo img {
+  height: 3.5rem;
 }
 
 header nav {
@@ -115,6 +178,8 @@ header nav {
 
 header a {
   margin-left: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
 }
 
 /* Banner */
@@ -122,12 +187,12 @@ header a {
 #banner {
   display: flex;
   background-color: hsl(0, 0%, 80%);
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 
 #banner .ccontainer {
   justify-content: center;
-  max-width: 260px;
+  max-width: 2px;
   padding-left: 1rem;
 }
 
@@ -156,6 +221,10 @@ header a {
 
 #about .main-article p {
   padding-bottom: 2rem;
+}
+
+#about .articles {
+  margin-top: 1.5rem;
 }
 
 #about .articles .article:last-child {
@@ -204,4 +273,21 @@ header a {
 
 #thesis .main-article h3 {
   padding: 2rem 0 1.5rem 0;
+}
+
+#thesis .articles .article:first-child {
+  background-color: hsl(0, 0%, 80%);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid hsl(0, 0%, 80%);
+}
+
+footer nav a:first-child {
+  margin-right: 1rem;
 }
