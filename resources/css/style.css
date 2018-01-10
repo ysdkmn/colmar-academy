@@ -99,7 +99,7 @@ img {
   flex-direction: column;
 }
 
-.left-margins{
+.left-margins {
   margin: 2.5rem 2rem;
 }
 
@@ -111,7 +111,8 @@ img {
   width: 40%
 }
 
-.mobile { /* turns off mobile configurations */
+.mobile {
+  /* turns off mobile configurations */
   display: none;
 }
 
@@ -185,7 +186,7 @@ header {
   border-radius: 10px;
 }
 
-.logo:hover img{
+.logo:hover img {
   background-color: hsl(29, 100%, 42%);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -193,6 +194,10 @@ header {
 
 header.desktop nav {
   margin-right: 0.5rem;
+}
+
+header.desktop nav img {
+  display: none;
 }
 
 header.desktop a {
@@ -207,9 +212,29 @@ header a:hover {
   color: hsl(0, 0%, 100%);
 }
 
+/* fix header break at 760px */
+
+@media only screen and (max-width: 760px) {
+  header {
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+  }
+  header.desktop nav img {
+    display: block;
+    margin-right: 0.5rem;
+  }
+}
+
 /* mobile configuration for header */
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
   .desktop {
     display: none;
   }
@@ -222,11 +247,12 @@ header a:hover {
     align-items: center;
     height: 4.5rem;
   }
-  header.mobile a{
+  header.mobile a {
     padding: 0.5rem;
     padding-bottom: 0;
   }
 }
+
 /* Banner */
 
 #banner {
@@ -331,7 +357,7 @@ header a:hover {
   color: hsl(29, 100%, 42%);
 }
 
-#courses .container .course:nth-child(2n){
+#courses .container .course:nth-child(2n) {
   margin: 0 2rem;
 }
 
