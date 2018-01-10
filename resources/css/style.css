@@ -79,13 +79,18 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.35;
 }
 
 p {
   font-size: 1.1rem;
-  font-style: italic;
+  line-height: 1.4rem;
+}
+
+span {
+  font-weight: bold;
 }
 
 img {
@@ -109,16 +114,7 @@ img {
   width: 40%
 }
 
-.title {
-  padding: 2rem 0;
-  text-align: center;
-}
-
 /* universal article container styling */
-
-.articles {
- margin-top: 2rem;
-}
 
 .article {
   display: flex;
@@ -136,6 +132,10 @@ img {
 
 .article h3, .article p, .article a {
   margin: 0.5rem 0;
+}
+
+.article a {
+  margin-top: 0.75rem;
 }
 
 /* Header */
@@ -192,20 +192,22 @@ header a {
 
 #banner .ccontainer {
   justify-content: center;
-  max-width: 2px;
+  max-width: 20.2rem;
   padding-left: 1rem;
 }
 
 #banner h1, #banner h3, #banner a {
-  margin: 1rem 0;
-  line-height: 1;
+  margin: 0.6rem 0;
 }
 
 #banner a {
-  padding: 0.5rem 0;
-  color: hsl(0, 0%, 80%);
-  background-color: hsl(0, 0%, 20%);
   width: 100%;
+  padding: 1rem 0;
+  margin-top: 1.1rem;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 80%);
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -243,13 +245,22 @@ header a {
   padding: 0 4.5rem 2rem 4.5rem;
 }
 
+#courses .title {
+  text-align: center;
+  padding: 2rem 0;
+}
+
 #courses .course {
   width: 33%;
   background-color: white;
 }
 
 #courses .course span {
-  margin: 0.5rem 1rem;
+  margin: 0.75rem 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-style: italic;
 }
 
 #courses .course h3 {
@@ -271,8 +282,17 @@ header a {
   display: flex;
 }
 
-#thesis .main-article h3 {
+#thesis .title {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#thesis .main-article h2 {
   padding: 2rem 0 1.5rem 0;
+}
+
+#thesis .articles {
+  margin-top: 2.5rem;
 }
 
 #thesis .articles .article:first-child {
