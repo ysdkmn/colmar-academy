@@ -90,10 +90,6 @@ p {
   line-height: 1.4rem;
 }
 
-span {
-  font-weight: bold;
-}
-
 img {
   max-width: 100%;
 }
@@ -176,7 +172,20 @@ header {
 
 .logo img {
   height: 3.5rem;
+  margin-right: .25rem;
 }
+
+.logo:hover {
+  background-color: hsl(29, 41%, 70%);
+  border-radius: 10px;
+}
+
+.logo:hover img{
+  background-color: hsl(29, 100%, 42%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 
 header nav {
   margin-right: 0.5rem;
@@ -275,7 +284,6 @@ header a:hover {
   margin: 0.75rem 1rem;
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: normal;
   font-style: italic;
 }
 
@@ -284,8 +292,19 @@ header a:hover {
   margin-bottom: 0;
 }
 
-#courses .course p {
+#courses .course-list {
   margin: 0 1rem 1.5rem 1rem;
+}
+
+#courses .course-list a {
+  color: hsl(0, 0%, 20%);
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+#courses .course-list a:hover {
+  font-weight: bold;
+  color: hsl(29, 100%, 42%);
 }
 
 #courses .container .course:nth-child(2n){
@@ -326,7 +345,6 @@ footer {
 
 footer span {
   color: hsl(29, 100%, 42%);
-  font-weight: normal;
 }
 
 footer a {
