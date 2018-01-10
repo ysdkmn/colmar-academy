@@ -111,6 +111,10 @@ img {
   width: 40%
 }
 
+.mobile { /* turns off mobile configurations */
+  display: none;
+}
+
 /* universal article container styling */
 
 .article {
@@ -168,6 +172,7 @@ header {
 
 .logo-right {
   color: hsl(29, 100%, 42%);
+  margin-right: .5rem;
 }
 
 .logo img {
@@ -186,12 +191,11 @@ header {
   border-bottom-left-radius: 10px;
 }
 
-
-header nav {
+header.desktop nav {
   margin-right: 0.5rem;
 }
 
-header a {
+header.desktop a {
   padding: 0.25rem 0.5rem;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
@@ -203,6 +207,26 @@ header a:hover {
   color: hsl(0, 0%, 100%);
 }
 
+/* mobile configuration for header */
+
+@media only screen and (max-width: 480px){
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header.mobile nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.5rem;
+  }
+  header.mobile a{
+    padding: 0.5rem;
+    padding-bottom: 0;
+  }
+}
 /* Banner */
 
 #banner {
@@ -340,6 +364,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0.5rem 1rem 1.5rem;
+  background-color: hsl(29, 41%, 70%);
   border-top: 1px solid hsl(29, 100%, 42%);
 }
 
@@ -352,7 +377,5 @@ footer a {
 }
 
 footer a:hover {
-  background-color: hsl(29, 41%, 70%);
-  border-radius: 5px;
   color: hsl(0, 0%, 100%);
 }
