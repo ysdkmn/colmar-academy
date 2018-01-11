@@ -144,6 +144,17 @@ img {
   text-decoration: underline;
 }
 
+/* universal mobile configuration */
+
+@media only screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
 /* Header */
 
 header {
@@ -229,18 +240,13 @@ header a:hover {
   header.desktop nav img {
     display: block;
     margin-right: 0.5rem;
+    height: 3rem;
   }
 }
 
 /* mobile configuration for header */
 
 @media only screen and (max-width: 480px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
   header.mobile nav {
     display: flex;
     justify-content: space-around;
@@ -264,11 +270,15 @@ header a:hover {
 #banner .ccontainer {
   justify-content: center;
   max-width: 20.2rem;
-  padding-left: 1rem;
+  padding: .5rem;
 }
 
 #banner h1, #banner h3, #banner a {
   margin: 0.6rem 0;
+}
+
+#banner .desktop a{
+  display: none;
 }
 
 #banner a {
@@ -284,6 +294,41 @@ header a:hover {
 
 #banner a:hover {
   background-color: hsl(29, 100%, 42%);
+}
+
+/* fix banner break at 865px */
+
+@media only screen and (max-width: 865px){
+  #banner {
+    justify-content: flex-end;
+    background-image: url("../media/banner.jpg");
+    background-repeat:no-repeat;
+    background-position: right top;
+  }
+
+  #banner .desktop {
+    display: none;
+  }
+
+  #banner .ccontainer {
+    background-color: hsla(29, 41%, 70%, .9);
+  }
+
+}
+
+/* mobile configuration for banner */
+
+@media only screen and (max-width: 480px) {
+  #banner {
+    display: block;
+    background-color: hsl(29, 41%, 70%);
+    background-image: none;
+  }
+  #banner .ccontainer {
+    max-width: 100%;
+    padding: 2rem;
+    background: transparent;
+  }
 }
 
 /* About Section */
