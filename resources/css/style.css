@@ -291,7 +291,7 @@ header a:hover {
   margin: 0.6rem 0;
 }
 
-#banner .desktop a{
+#banner .desktop a {
   display: none;
 }
 
@@ -312,22 +312,19 @@ header a:hover {
 
 /* fix banner break at 865px */
 
-@media only screen and (max-width: 865px){
+@media only screen and (max-width: 865px) {
   #banner {
     justify-content: flex-end;
     background-image: url("../media/banner.jpg");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: right top;
   }
-
   #banner .desktop {
     display: none;
   }
-
   #banner .ccontainer {
     background-color: hsla(29, 41%, 70%, .9);
   }
-
 }
 
 /* mobile configuration for banner */
@@ -374,9 +371,7 @@ header a:hover {
   #main-content {
     background-color: hsl(29, 20%, 70%);
   }
-
-/* mobile configuration for about section */
-
+  /* mobile configuration for about section */
   #about .articles {
     margin-top: 1rem;
   }
@@ -436,6 +431,30 @@ header a:hover {
 
 #courses .container .course:nth-child(2n) {
   margin: 0 2rem;
+}
+
+/* mobile configuration for course section */
+
+@media only screen and (max-width: 480px) {
+  #courses {
+    background-color: transparent;
+  }
+  #courses .container{
+    display: block;
+    padding: 0 2rem;
+  }
+  #courses .container .course:nth-child(2n) {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #courses .course{
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  #courses h3 {
+    background-color: hsl(29, 41%, 70%);
+    padding: 0.5rem 1rem;
+  }
 }
 
 /* Thesis Section */
