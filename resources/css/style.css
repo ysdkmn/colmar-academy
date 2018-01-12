@@ -439,7 +439,7 @@ header a:hover {
   #courses {
     background-color: transparent;
   }
-  #courses .container{
+  #courses .container {
     display: block;
     padding: 0 2rem;
   }
@@ -447,13 +447,23 @@ header a:hover {
     margin: 0;
     margin-bottom: 1rem;
   }
-  #courses .course{
+  /* drop-down display of course offerings */
+  #courses .course {
     width: auto;
     margin-bottom: 1rem;
+    display: none;
   }
   #courses h3 {
     background-color: hsl(29, 41%, 70%);
     padding: 0.5rem 1rem;
+    border-bottom: 2px solid hsl(29, 100%, 42%);
+    margin-top: 1rem;
+  }
+  #courses h3:hover+div {
+    display: flex;
+  }
+  #courses .course:hover {
+    display: flex;
   }
 }
 
