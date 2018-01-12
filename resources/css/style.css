@@ -153,6 +153,20 @@ img {
   .mobile {
     display: block;
   }
+  .right {
+    width: 100%;
+  }
+  .article {
+    display: block;
+    padding: 0.5rem 0;
+  }
+  .article .ccontainer {
+    padding: 0 4rem;
+  }
+  .article .image-container {
+    margin: 1rem 2rem;
+    width: auto;
+  }
 }
 
 /* Header */
@@ -352,6 +366,24 @@ header a:hover {
 #about .articles .article:last-child {
   background-color: hsl(29, 20%, 70%);
   margin-bottom: 2rem;
+}
+
+/* mobile configuration for main-content */
+
+@media only screen and (max-width: 480px) {
+  #main-content {
+    background-color: hsl(29, 20%, 70%);
+  }
+
+/* mobile configuration for about section */
+
+  #about .articles {
+    margin-top: 1rem;
+  }
+  #about .articles .article:last-child {
+    background-color: transparent;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Courses Sections */
