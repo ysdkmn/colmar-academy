@@ -490,6 +490,52 @@ header a:hover {
   background-color: hsl(29, 20%, 70%);
 }
 
+/* mobile configuration for thesis section */
+
+@media only screen and (max-width: 480px) {
+  #thesis {
+    padding-top: 3rem;
+  }
+  #thesis .container {
+    display: block;
+  }
+  #thesis .left {
+    width: auto;
+    position: relative;
+  }
+  #thesis .left-margins {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  #thesis .left h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0.75rem;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    color: hsl(29, 20%, 70%);
+  }
+  #thesis h3 {
+    margin: 2rem 0;
+    padding: 2rem 0.75rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: hsl(29, 20%, 70%);
+  }
+  #thesis h3:hover, #thesis h2:hover{
+    color: hsl(29, 100%, 42%);
+  }
+  .fisma {
+    background-image: url("../media/thesis-fisma.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:
+  }
+  .nowthen {
+    background-image: url("../media/thesis-now-and-then.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 5rem;
+  }
+}
 /* Footer */
 
 footer {
@@ -510,4 +556,12 @@ footer a {
 
 footer a:hover {
   color: hsl(0, 0%, 100%);
+}
+
+/* mobile configuration for footer */
+
+@media only screen and (max-width: 480px) {
+  footer {
+    padding: 2rem 1.5rem;
+  }
 }

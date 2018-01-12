@@ -122,6 +122,7 @@
     </div>
 
     <!-- Course Offerings Section -->
+    <!-- when toggeling between desktop and mobile configs, h3 titles are moved below and above the course images, respectivley -->
 
     <div id="courses" class="ccontainer">
       <h2 class="title">Start learning</h2>
@@ -215,18 +216,21 @@
     <!-- Thesis Display Section -->
 
     <div id="thesis" class="ccontainer">
-      <h2 class="title">Thesis exhibit</h2>
+      <h2 class="title">Thesis exhibits</h2>
       <div class="container">
         <div class="left">
           <div class="left-margins main-article ccontainer">
             <video width="100%" autoplay loop>
                 <source src="./resources/media/thesis.mp4" type="video/mp4">
           </video>
-            <h2>Reimagine urban</h2>
-            <p>"Curabitur vitae libero in ipsum porttotor consequat. Aliqua, et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <a href="#"><h2>Reimagine urban</h2></a>
+            <p class="desktop">"Curabitur vitae libero in ipsum porttotor consequat. Aliqua, et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
         </div>
-        <div class="right articles ccontainer">
+
+        <!-- desktop config: right column of thesis section -->
+
+        <div class="desktop right articles ccontainer">
           <div class="article">
             <div class="image-container">
               <img src="./resources/media/thesis-fisma.jpg" alt="fisma">
@@ -248,6 +252,14 @@
             </div>
           </div>
         </div>
+
+        <!-- mobile config: additional theses are below main thesis -->
+        <div class="mobile fisma">
+          <a href="#"><h3>Fisma: Design and Prototype</h3></a>
+        </div>
+        <div class="mobile nowthen">
+          <a href="#"><h3>Now and then</h3></a>
+        </div>
       </div>
     </div>
   </div>
@@ -256,7 +268,7 @@
 
   <footer>
     <span>&copy; 2016 Colmar Academy. All rights reserved</span>
-    <nav>
+    <nav class="desktop">
       <a href="#">Terms</a>
       <a href="#">Privacy</a>
     </nav>
