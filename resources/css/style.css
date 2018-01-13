@@ -62,6 +62,7 @@ html {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   color: hsl(0, 0%, 20%);
+  background-color: hsl(29, 20%, 70%);
 }
 
 a {
@@ -346,6 +347,7 @@ header a:hover {
 
 #about {
   display: flex;
+  background-color: hsl(0, 0%, 100%);
 }
 
 #about .main-article h2 {
@@ -365,13 +367,12 @@ header a:hover {
   margin-bottom: 2rem;
 }
 
-/* mobile configuration for main-content */
+/* mobile configuration for about section */
 
 @media only screen and (max-width: 480px) {
-  #main-content {
-    background-color: hsl(29, 20%, 70%);
+  #about {
+    background-color: transparent;
   }
-  /* mobile configuration for about section */
   #about .articles {
     margin-top: 1rem;
   }
@@ -469,6 +470,9 @@ header a:hover {
 
 /* Thesis Section */
 
+#thesis {
+  background-color: hsl(0, 0%, 100%);
+}
 #thesis .container {
   display: flex;
 }
@@ -495,6 +499,7 @@ header a:hover {
 @media only screen and (max-width: 480px) {
   #thesis {
     padding-top: 3rem;
+    background-color: transparent;
   }
   #thesis .container {
     display: block;
@@ -519,7 +524,7 @@ header a:hover {
     background-color: hsla(0, 0%, 0%, 0.5);
     color: hsl(29, 20%, 70%);
   }
-  #thesis h3:hover, #thesis h2:hover{
+  #thesis h3:hover, #thesis h2:hover {
     color: hsl(29, 100%, 42%);
   }
   .fisma {
@@ -536,6 +541,7 @@ header a:hover {
     margin-bottom: 5rem;
   }
 }
+
 /* Footer */
 
 footer {
