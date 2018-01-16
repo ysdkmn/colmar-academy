@@ -390,6 +390,8 @@ header a:hover {
 
 #courses .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 4.5rem 2rem 4.5rem;
 }
 
@@ -399,8 +401,9 @@ header a:hover {
 }
 
 #courses .course {
-  width: 33%;
+  width: 30%;
   background-color: white;
+  margin-bottom: 2.5rem;
 }
 
 #courses .course span {
@@ -430,9 +433,12 @@ header a:hover {
   color: hsl(29, 100%, 42%);
 }
 
-#courses .container .course:nth-child(2n) {
-  margin: 0 2rem;
-}
+/* fix course section break at 865px */
+
+@media only screen and (max-width: 865px) {
+  #courses .course {
+    width: 47%;
+  }
 
 /* mobile configuration for course section */
 
@@ -444,10 +450,7 @@ header a:hover {
     display: block;
     padding: 0 2rem;
   }
-  #courses .container .course:nth-child(2n) {
-    margin: 0;
-    margin-bottom: 1rem;
-  }
+
   /* drop-down display of course offerings */
   #courses .course {
     width: auto;
