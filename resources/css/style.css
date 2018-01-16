@@ -365,6 +365,33 @@ header a:hover {
   margin-bottom: 2rem;
 }
 
+/* about section fix at 900 */
+
+@media only screen and (max-width: 900px) and (min-width: 480px) {
+  #about {
+    flex-direction: column;
+  }
+  #about  .articles.ccontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5rem 2rem 2.5rem 2rem;
+    background-color: hsl(29, 20%, 70%);
+  }
+  #about .article {
+    width: 47%;
+  }
+  #about .left {
+    width: auto;
+  }
+  #about .left-margins {
+    margin-bottom: 0;
+  }
+  #about .right {
+    width: auto;
+  }
+}
+
 /* mobile configuration for main content */
 
 @media only screen and (max-width: 480px) {
@@ -493,6 +520,33 @@ header a:hover {
 
 #thesis .articles .article:first-child {
   background-color: hsl(29, 20%, 70%);
+}
+
+/* thesis section fix at 900 */
+
+@media only screen and (max-width: 900px) and (min-width: 480px) {
+  #thesis .container {
+    flex-direction: column;
+  }
+  #thesis  .articles.ccontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5rem 2rem 2.5rem 2rem;
+    background-color: hsl(29, 20%, 70%);
+  }
+  #thesis .article {
+    width: 47%;
+  }
+  #thesis .left {
+    width: auto;
+  }
+  #thesis .left-margins {
+    margin-bottom: 0;
+  }
+  #thesis .right {
+    width: auto;
+  }
 }
 
 /* mobile configuration for thesis section */
