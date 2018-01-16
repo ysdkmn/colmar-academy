@@ -371,7 +371,7 @@ header a:hover {
   #about {
     flex-direction: column;
   }
-  #about  .articles.ccontainer {
+  #about .articles.ccontainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -398,9 +398,7 @@ header a:hover {
   #main-content {
     background-color: hsl(29, 11%, 42%);
   }
-
-/* mobile configuration for about section */
-
+  /* mobile configuration for about section */
   #about {
     background-color: transparent;
   }
@@ -528,7 +526,7 @@ header a:hover {
   #thesis .container {
     flex-direction: column;
   }
-  #thesis  .articles.ccontainer {
+  #thesis .articles.ccontainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -610,21 +608,41 @@ footer span {
   color: hsl(29, 100%, 42%);
 }
 
+footer .footer-navs {
+  display: flex;
+}
+
 footer a {
   padding: 0.25rem .5rem;
+}
+
+footer .icon-links a {
+  padding: 0.25rem 1rem;
 }
 
 footer a:hover {
   color: hsl(0, 0%, 100%);
 }
 
-/* 565 break and mobile configuration for footer */
+/* 650 break fix for footer */
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 750px) {
   footer {
     padding: 2rem 1.5rem;
   }
   footer .desktop {
     display: none;
+  }
+}
+
+/* 550 break and mobile configuration for footer */
+
+@media only screen and (max-width: 550px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer span {
+    margin-bottom: 2rem;
   }
 }
