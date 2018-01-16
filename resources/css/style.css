@@ -62,7 +62,7 @@ html {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   color: hsl(0, 0%, 20%);
-  background-color: hsl(29, 20%, 70%);
+  background-color: hsl(29, 41%, 70%);
 }
 
 a {
@@ -278,7 +278,6 @@ header a:hover {
 
 #banner {
   display: flex;
-  background-color: hsl(29, 41%, 70%);
   padding-top: 4.5rem;
 }
 
@@ -333,7 +332,6 @@ header a:hover {
 @media only screen and (max-width: 480px) {
   #banner {
     display: block;
-    background-color: hsl(29, 41%, 70%);
     background-image: none;
   }
   #banner .ccontainer {
@@ -367,9 +365,15 @@ header a:hover {
   margin-bottom: 2rem;
 }
 
-/* mobile configuration for about section */
+/* mobile configuration for main content */
 
 @media only screen and (max-width: 480px) {
+  #main-content {
+    background-color: hsl(29, 11%, 42%);
+  }
+
+/* mobile configuration for about section */
+
   #about {
     background-color: transparent;
   }
@@ -383,10 +387,6 @@ header a:hover {
 }
 
 /* Courses Sections */
-
-#courses {
-  background-color: hsl(29, 41%, 70%);
-}
 
 #courses .container {
   display: flex;
@@ -439,18 +439,15 @@ header a:hover {
   #courses .course {
     width: 47%;
   }
+}
 
 /* mobile configuration for course section */
 
 @media only screen and (max-width: 480px) {
-  #courses {
-    background-color: transparent;
-  }
   #courses .container {
     display: block;
     padding: 0 2rem;
   }
-
   /* drop-down display of course offerings */
   #courses .course {
     width: auto;
@@ -476,6 +473,7 @@ header a:hover {
 #thesis {
   background-color: hsl(0, 0%, 100%);
 }
+
 #thesis .container {
   display: flex;
 }
@@ -551,7 +549,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0.5rem 1rem 1.5rem;
-  background-color: hsl(29, 41%, 70%);
   border-top: 1px solid hsl(29, 100%, 42%);
 }
 
@@ -567,10 +564,13 @@ footer a:hover {
   color: hsl(0, 0%, 100%);
 }
 
-/* mobile configuration for footer */
+/* 565 break and mobile configuration for footer */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 565px) {
   footer {
     padding: 2rem 1.5rem;
+  }
+  footer .desktop {
+    display: none;
   }
 }
